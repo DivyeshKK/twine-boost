@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				twine: {
+					50: '#f5f3ff',
+					100: '#ede9fe',
+					200: '#ddd6fe',
+					300: '#c4b5fd',
+					400: '#a78bfa',
+					500: '#8b5cf6',
+					600: '#7c3aed',
+					700: '#6d28d9',
+					800: '#5b21b6',
+					900: '#4c1d95',
+				},
+				accent: {
+					50: '#f0fdfa',
+					100: '#ccfbf1',
+					200: '#99f6e4',
+					300: '#5eead4',
+					400: '#2dd4bf',
+					500: '#14b8a6',
+					600: '#0d9488',
+					700: '#0f766e',
+					800: '#115e59',
+					900: '#134e4a',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +109,53 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'fade-out': {
+					'0%': { opacity: '1' },
+					'100%': { opacity: '0' }
+				},
+				'slide-in': {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
+				},
+				'slide-out': {
+					'0%': { transform: 'translateY(0)', opacity: '1' },
+					'100%': { transform: 'translateY(-20px)', opacity: '0' }
+				},
+				'pulse-soft': {
+					'0%, 100%': {
+						opacity: '1',
+					},
+					'50%': {
+						opacity: '0.85',
+					},
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out forwards',
+				'fade-out': 'fade-out 0.3s ease-out forwards',
+				'slide-in': 'slide-in 0.4s ease-out forwards',
+				'slide-out': 'slide-out 0.4s ease-out forwards',
+				'pulse-soft': 'pulse-soft 3s ease-in-out infinite',
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				display: ['Montserrat', 'sans-serif'],
+			},
+			boxShadow: {
+				'subtle': '0 2px 10px rgba(0, 0, 0, 0.05)',
+				'hover': '0 10px 25px rgba(0, 0, 0, 0.08)',
+				'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
+			},
+			backdropBlur: {
+				'xs': '2px',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
