@@ -217,7 +217,7 @@ const Index = () => {
           <div className="flex items-center justify-center mb-6">
             <div className="flex items-center">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mr-3 my-auto">
-                Get Started
+                Get Started with
               </h2>
               <img 
                 src="/lovable-uploads/967b2945-42b9-44db-9af7-f17c1fac7449.png" 
