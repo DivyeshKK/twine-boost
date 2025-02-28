@@ -211,17 +211,17 @@ const Index = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          {/* Updated header with logo and text on same line */}
+          {/* Updated header with text and logo on same line, swapped positions */}
           <div className="flex items-center justify-center mb-6">
             <div className="flex items-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mr-3 my-auto">
+                Get Started
+              </h2>
               <img 
                 src="/lovable-uploads/967b2945-42b9-44db-9af7-f17c1fac7449.png" 
                 alt="Twine Logo" 
                 className="h-14 md:h-16"
               />
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 ml-3">
-                Get Started
-              </h2>
             </div>
           </div>
           
