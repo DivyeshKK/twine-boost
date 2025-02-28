@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  MessageSquare, 
   CheckCircle, 
   ChevronRight, 
   X, 
@@ -213,10 +212,11 @@ const Index = () => {
           className="text-center mb-12"
         >
           <div className="flex items-center justify-center mb-4">
-            <div className="bg-twine-600 text-white p-2 rounded-lg">
-              <MessageSquare size={24} />
-            </div>
-            <h1 className="ml-3 text-3xl font-bold text-gray-900">twine</h1>
+            <img 
+              src="/lovable-uploads/967b2945-42b9-44db-9af7-f17c1fac7449.png" 
+              alt="Twine Logo" 
+              className="h-16 md:h-20"
+            />
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Get Started with Twine
@@ -492,7 +492,7 @@ const Index = () => {
                     
                     <ChannelOption
                       id="webChat"
-                      icon={<MessageSquare size={20} />}
+                      icon={<Inbox size={20} />}
                       label="Website Chat"
                       isSelected={formData.communication.channels.webChat}
                       onClick={() => handleChannelToggle('webChat')}

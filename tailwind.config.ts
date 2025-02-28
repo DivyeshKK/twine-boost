@@ -64,16 +64,16 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				twine: {
-					50: '#f5f3ff',
-					100: '#ede9fe',
-					200: '#ddd6fe',
-					300: '#c4b5fd',
-					400: '#a78bfa',
-					500: '#8b5cf6',
-					600: '#7c3aed',
-					700: '#6d28d9',
-					800: '#5b21b6',
-					900: '#4c1d95',
+					50: '#f0f5f1',
+					100: '#d8e5da',
+					200: '#b8d0bc',
+					300: '#92b798',
+					400: '#6d9c74',
+					500: '#4f7f58',
+					600: '#2e5434', /* British Racing Green / Forest Green */
+					700: '#264a2c',
+					800: '#1e3c23',
+					900: '#162e1b',
 				},
 				accent: {
 					50: '#f0fdfa',
@@ -87,6 +87,11 @@ export default {
 					800: '#115e59',
 					900: '#134e4a',
 				},
+				forestgreen: {
+					DEFAULT: '#2e5434',
+					light: '#4f7f58',
+					dark: '#1e3c23',
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
